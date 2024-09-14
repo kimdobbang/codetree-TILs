@@ -1,12 +1,14 @@
 import java.io.*;
 
 public class Main {
-    static String a, b;
+    static int a, b;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        a = br.readLine();
-        b = br.readLine();
+        StringBuilder sb = new StringBuilder();
+        a = Integer.parseInt(br.readLine());
+        b = Integer.parseInt(br.readLine());
+        sb.append(a + " " + b);
 
-        System.out.println(a +" "+ b);
+        System.out.println(sb);
     }
 }
