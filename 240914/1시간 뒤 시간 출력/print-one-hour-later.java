@@ -7,10 +7,10 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine(), ":");
         StringBuilder sb = new StringBuilder();
 
-        int h = Integer.parseInt(st.nextToken());
+        int h = Integer.parseInt(st.nextToken()) + 1;
         int m = Integer.parseInt(st.nextToken());
 
-        sb.append(h + 1).append(":").append(m);
+        sb.append(h).append(":").append(m);
         System.out.print(sb);
 
     }
