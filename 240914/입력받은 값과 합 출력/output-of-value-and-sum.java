@@ -16,7 +16,7 @@ public class Main {
         sb.append(a + " " + b + " " + (a+b));
         System.out.println(sb);
 
-        // () 안하면 문자열로 들어감0
+        // () 안하면 문자열로 들어감
         // sb.setLength(0);
         // sb.append(a + " " + b + " " + a+b);
         // System.out.println(sb);
