@@ -11,6 +11,6 @@ public class Main {
         a += b;
 
         b += a;
-        System.out.println(a + " " b);
+        System.out.println(a + " " + b);
 \    }
 }
