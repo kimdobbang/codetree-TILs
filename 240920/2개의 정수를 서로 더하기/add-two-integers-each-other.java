@@ -9,8 +9,8 @@ public class Main {
         int b = sc.nextInt();
 
         a += b;
-
+\
         b += a;
         System.out.println(a + " " + b);
-\    }
+    }
 }
