@@ -11,7 +11,7 @@ public class Main {
         sb.append(n * n);
 
         if (n < 5) {
-            sb.append("\tiny");
+            sb.append("\ntiny");
         } 
         System.out.println(sb);
     }
