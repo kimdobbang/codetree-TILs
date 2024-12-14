@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int a = Integer.parseInt(st.nextToken());
+        int b = Integer.parseInt(st.nextToken());
+        int c = Integer.parseInt(st.nextToken());
+
+
+        if (a <= b && a <= c){
+             sb.append(a);
+        }
+        if (b <= a && b <= c){
+             sb.append(b);
+        }
+        if (c <= b && c <= a){
+             sb.append(c);
+        }
+
+        System.out.println(sb);
+    }
+}
