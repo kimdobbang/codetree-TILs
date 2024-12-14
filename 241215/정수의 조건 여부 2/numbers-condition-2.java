@@ -9,7 +9,7 @@ public class Main {
         if (a == 5) {
             sb.append("A");
         } if ((a & 1) == 0) {
-            sb.append("B")
+            sb.append("B");
         }
         
         System.out.println(sb);
