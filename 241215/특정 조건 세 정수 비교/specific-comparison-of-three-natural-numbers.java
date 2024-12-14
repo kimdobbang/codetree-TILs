@@ -11,7 +11,7 @@ public class Main {
         int c = Integer.parseInt(st.nextToken());
 
 
-        if (a =< b && a =< c){
+        if (a <= b && a <= c){
              sb.append(1).append(" ");
         } else sb.append(0).append(" ");
 
