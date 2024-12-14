@@ -12,7 +12,7 @@ public class Main {
 
 
         if (a < b && a < c){
-             sb.append(1);
+             sb.append(1).append(" ");
         } else sb.append(0).append(" ");
 
         if (a == b && b == c) {
