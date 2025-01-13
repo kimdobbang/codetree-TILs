@@ -15,7 +15,7 @@ public class Main {
             for (int i = 1; i <= n; i++) {
                 sb.append(i).append(" ");
             }
-        } else if (c.equals("D")) {
+        } else {
             // 내림차순
             for (int i = n; i >= 1; i--) {
                 sb.append(i).append(" ");
