@@ -9,11 +9,8 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         int c = Integer.parseInt(st.nextToken());
-        int max = -100;        
+        int max = a;        
         
-        if (a > max) {
-            max = a;
-        }
         if ( b > max) {
             max = b;
         }
