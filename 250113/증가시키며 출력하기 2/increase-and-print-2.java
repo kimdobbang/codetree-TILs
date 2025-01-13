@@ -5,11 +5,10 @@ public class Main {
         // Please write your code here.
         StringBuilder sb = new StringBuilder();
         int i = 10;
-        while (i < 26) {
+        while (i <= 26) {
             sb.append(i).append(" ");
             i ++;
         }
-        sb.append(i);
         System.out.print(sb);
     }
 }
