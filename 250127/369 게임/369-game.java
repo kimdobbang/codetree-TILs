@@ -10,13 +10,16 @@ public class Main {
 
         for (int i = 1; i <= n; i++) {
             if (isZero(i)) {
-                sb.append(0).append(" ");
+                sb.append(0);
             } else {
-                sb.append(i).append(" ");
+                sb.append(i);
+            }
+            if (i < n) {
+                sb.append(" ");
             }
         }
 
-        System.out.print(sb.toString().trim());
+        System.out.print(sb);
     }
 
     public static boolean isZero(int num){
