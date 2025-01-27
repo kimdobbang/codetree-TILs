@@ -31,7 +31,7 @@ public class Main {
     public static boolean is369(int num) {
         String nums = Integer.toString(num);
         for(char n : nums.toCharArray()) {
-            if (n == '3' | n == '6' || n == '9') {
+            if (n == '3' || n == '6' || n == '9') {
                 return true;
             }
         }
