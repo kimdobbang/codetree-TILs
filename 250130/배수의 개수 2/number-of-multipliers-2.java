@@ -6,9 +6,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int cnt = 0;
 
-        int n;
         for (int i = 0; i < 10; i++) {
-            n = Integer.parseInt(br.readLine());
+            int n = Integer.parseInt(br.readLine());
             if (n % 2 != 0) {
                 cnt++;
             }
