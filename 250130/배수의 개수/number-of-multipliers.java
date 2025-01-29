@@ -8,7 +8,7 @@ public class Main {
         int cntF = 0;
 
         for (int i = 0; i < 10; i++) {
-            int n = Integer.parseInt(br.readLine());
+            int n = Integer.parseInt(br.readLine().trim());
             if (n % 3 == 0) {
                 cntT++;
             }
