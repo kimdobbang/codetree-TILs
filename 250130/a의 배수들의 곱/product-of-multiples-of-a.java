@@ -23,7 +23,7 @@ public class Main {
         //         prob *= i;
         //     }
         // }
-        // System.out.print(prob);
+        System.out.print(prob);
 
         //  재귀
         // System.out.print(sol(a, b));
