@@ -16,7 +16,7 @@ public class Main {
 
         avgVal = (double) sumVal / n;
 
-        System.out.printf("%d %1.f", sumVal, avgVal);
+        System.out.printf("%d %.1f", sumVal, avgVal);
         
     }
 }
