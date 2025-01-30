@@ -7,12 +7,22 @@ public class Main {
         StringBuilder sb = new StringBuilder();
                 
         int n = Integer.parseInt(br.readLine());
+        // for (int i = 1; i <= n; i++) {
+        //     if (i % 2 != 0 && i % 10 != 5 && (i % 3 != 0 || i % 9 == 0)) {
+        //         sb.append(i).append(" ");
+        //     }
+        // }
         for (int i = 1; i <= n; i++) {
-            if (i % 2 != 0 && i % 10 != 5 && (i % 3 != 0 || i % 9 == 0)) {
-                sb.append(i).append(" ");
+            if (i % 2 == 0){
+                continue;
+            } else if (i % 10 == 5) {
+                continue;
+            } else if (i % 3 == 0 && i % 9 != 0) {
+                continue;
             }
+            sb.append(i).append(" ");
         }
-        
+
         System.out.print(sb);
         
     }
