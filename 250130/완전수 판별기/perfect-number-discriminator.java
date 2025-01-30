@@ -7,7 +7,7 @@ public class Main {
                 
         int n = Integer.parseInt(br.readLine());
 
-        if (n == 6 || n == 28 || n ==498) {
+        if (n == 6 || n == 28 || n ==496) {
             System.out.print("P");
         } else {
             System.out.print("N");
