@@ -8,12 +8,16 @@ public class Main {
 
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-        int ans = 1;
-        
-        for (int i = 0; i < b; i++) {
-            ans *= a;
+        int answer = pow(a, b);
+
+        System.out.print(answer);
+    }
+
+    public static int pow(int a, int b) {
+        if (b == 0) {
+            return 1;
         }
 
-        System.out.print(ans);
+        return a * pow(a, b - 1);
     }
 }
