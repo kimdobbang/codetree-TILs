@@ -10,11 +10,17 @@ public class Main {
         int b = Integer.parseInt(st.nextToken());
         int prob = 1;
 
-        for(int i = 1; i <= b; i++) {
-            if (i % a == 0) {
-                prob *= i;
-            }
+        // b이하의 a 배수만 순회하면 불필요한 반복 x
+        for (int i = a; i <= b; i += a ) {
+            prob *= i;
         }
+
+        // 모든 b를 순회
+        // for (int i = 1; i <= b; i++) {
+        //     if (i % a == 0) {
+        //         prob *= i;
+        //     }
+        // }
         System.out.print(prob);
 
         //  재귀
