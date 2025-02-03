@@ -8,10 +8,11 @@ public class Main {
 
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
+        int c = Integer.parseInt(st.nextToken());
 
         boolean hasC = true;
         for (int i = a; i <= b; i++) {
-            if (i % 3 != 0) {
+            if (i % c != 0) {
                 hasC = false;
                 break;
             }
