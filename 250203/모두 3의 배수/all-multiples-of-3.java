@@ -7,8 +7,10 @@ public class Main {
 
         boolean isPerfect = true;
         for(int i = 0; i < 5; i++) {
-            if (i % 3 != 0) {
+            int n = Integer.parseInt(br.readLine());
+            if (n % 3 != 0) {
                 isPerfect = false;
+                break;
             }
         }
 
