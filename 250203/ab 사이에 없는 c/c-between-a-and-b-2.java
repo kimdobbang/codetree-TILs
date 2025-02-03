@@ -10,7 +10,7 @@ public class Main {
         int b = Integer.parseInt(st.nextToken());
         int c = Integer.parseInt(st.nextToken());
 
-        boolean hasC = true; // 기본값을 true로 설정
+        boolean hasNotC = true; // 기본값을 true로 설정
 
         for (int i = a; i <= b; i++) {
             if (i % c == 0) { // 하나라도 c의 배수가 있으면 false로 변경
@@ -19,7 +19,7 @@ public class Main {
             }
         }
 
-        if (hasC) {
+        if (hasNotC) {
             System.out.print("YES"); // c의 배수가 없으면 YES 출력
         } else {
             System.out.print("NO"); // c의 배수가 하나라도 있으면 NO 출력
