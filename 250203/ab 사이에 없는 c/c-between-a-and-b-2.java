@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -10,19 +10,19 @@ public class Main {
         int b = Integer.parseInt(st.nextToken());
         int c = Integer.parseInt(st.nextToken());
 
-        boolean hasC = true;
+        boolean hasC = true; // 기본값을 true로 설정
+
         for (int i = a; i <= b; i++) {
-            if (i % c == 0) {
+            if (i % c == 0) { // 하나라도 c의 배수가 있으면 false로 변경
                 hasC = false;
-                break;
+                break; // 더 확인할 필요 없음, 즉시 종료
             }
         }
-        
+
         if (hasC) {
-            System.out.print("NO");
+            System.out.print("YES"); // c의 배수가 없으면 YES 출력
         } else {
-            System.out.print("YES");
+            System.out.print("NO"); // c의 배수가 하나라도 있으면 NO 출력
         }
-        
     }
 }
