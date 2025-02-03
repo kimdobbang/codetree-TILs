@@ -14,7 +14,7 @@ public class Main {
 
         for (int i = a; i <= b; i++) {
             if (i % c == 0) { // 하나라도 c의 배수가 있으면 false로 변경
-                hasC = false;
+                hasNotC = false;
                 break; // 더 확인할 필요 없음, 즉시 종료
             }
         }
