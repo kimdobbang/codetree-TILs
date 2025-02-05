@@ -7,19 +7,19 @@ public class Main {
         StringBuilder sb = new StringBuilder();
                 
         int n = Integer.parseInt(br.readLine());
+        int star = 1;
 
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j <= i; j ++) {
+        for(int i = 0; i < n * 2 -1; i++) {
+            for(int j =0; j < star; j++) {
                 sb.append("*").append(" ");
             }
             sb.append("\n");
-        }
-        
-        for(int i = n - 1; i > 0; i-- ) {
-            for(int j = 0; j < i; j++) {
-                sb.append("*").append(" ");
+            
+            if(i < 4) {
+                star ++;
+            } else {
+                star --;
             }
-            sb.append("\n");
         }
 
         System.out.print(sb);                
