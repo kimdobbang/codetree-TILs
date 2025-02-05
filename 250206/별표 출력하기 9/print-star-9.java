@@ -12,12 +12,12 @@ public class Main {
         for(int i = 0; i < n; i++) {
             // n - i -1개 공백
             for(int j = 0; j < n - i - 1; j++) {
-                sb.append(" ").append(" ");
+                sb.append("  ");
             }
 
             // 2 * i + 1개 별
             for(int j = 0; j < 2 * i + 1; j++) {
-                sb.append("*").append(" ");
+                sb.append("* ");
             }
             sb.append("\n");
         }
