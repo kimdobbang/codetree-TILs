@@ -7,26 +7,21 @@ public class Main {
         StringBuilder sb = new StringBuilder();
                 
         int n = Integer.parseInt(br.readLine());
-        int star = 1;
 
-        for(int i = 0; i < 2 * n - 1; i++) {
-            for(int j = 0; j < star; j++) {
+        // 길이가 n 인 직각 삼각형
+        for(int i = 1; i <= n; i++) {
+            for(int j = 0; j < i; j++) {
                 sb.append("*");
             }
-            sb.append("\n");
+            sb.append("\n").append("\n");
+        }
 
-            // 한 줄 건너뛰기
-            if (i == 2 * n -2) {
-                continue;
-            } else {
-                sb.append("\n");
+        // 길이가 n - 1인 직각 삼각형
+        for(int i = n - 1; i >= 1; i--) {
+            for(int j =0 ; j < i; j++){
+                sb.append("*");
             }
-
-            if(i < n - 1) {
-                star ++;
-            } else {
-                star --;
-            }
+            sb.append("\n").append("\n");
         }
 
         System.out.print(sb);                
