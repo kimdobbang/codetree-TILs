@@ -9,13 +9,13 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
         int star = 1;
 
-        for(int i = 0; i < n * 2 ; i++) {
+        for(int i = 0; i < n * 2 -1 ; i++) {
             for(int j =0; j < star; j++) {
                 sb.append("*").append(" ");
             }
             sb.append("\n");
             
-            if(i < 4) {
+            if(i < n - 1) {
                 star ++;
             } else {
                 star --;
