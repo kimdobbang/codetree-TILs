@@ -8,9 +8,9 @@ public class Main {
                 
         int n = Integer.parseInt(br.readLine());
 
-        for (int i = 10; i < 10 + 2 * n; i += 2) {
-            for (int j = 0; j < 2 * n; j += 2) {
-                sb.append(i + (j + 1)).append(" ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                sb.append(11 + (2 * i) + (2 * j)).append(" ");
             }
             sb.append("\n");
         }
