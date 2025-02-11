@@ -11,13 +11,12 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sb.append(cnt);
-                cnt--;
                 if (cnt < 1) {
                     cnt = 9;
                 }
+                sb.append(cnt--);
             }
-                sb.append("\n");
+            sb.append("\n");
         }
         System.out.print(sb);
     }
