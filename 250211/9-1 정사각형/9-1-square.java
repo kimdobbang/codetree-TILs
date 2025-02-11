@@ -11,10 +11,8 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (cnt < 1) {
-                    cnt = 9;
-                }
                 sb.append(cnt--);
+                if (cnt < 1) cnt = 9;
             }
             sb.append("\n");
         }
