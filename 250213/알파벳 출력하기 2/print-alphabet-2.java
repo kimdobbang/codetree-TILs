@@ -23,7 +23,7 @@ public class Main {
                     sb.append("  ");
                     continue;
                 }
-
+                // 하지만 공백이 i번 추가된다는 규칙을 보고 공백 추가 (i번 반복) 반복문과 알파벳 출력 (n - i 개) 반복문을 나눠 작성도 가능
                 // i <= j라면(n - i부터) Z보다 작은지 검증하여 append
                 if (letter > 'Z') {
                     letter = 'A';
