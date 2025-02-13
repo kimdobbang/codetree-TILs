@@ -12,7 +12,7 @@ public class Main {
         for (int i = 2; i <= 8; i+= 2) {
             for (int j = b; j >= a; j --) {
                 sb.append(j).append(" * ").append(i).append(" = ").append(i * j);
-                if ( j > a) {
+                if ( j != a) {
                     sb.append(" / ");
                 }
             }
