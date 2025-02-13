@@ -10,7 +10,8 @@ public class Main {
         
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-                sb.append("(").append(i).append(", ").append(j).append(") ");
+                // sb.append("(").append(i).append(", ").append(j).append(") ");
+                sb.append(String.format("(%d, %d) ", i, j));
                 if ((i + j) % 4 == 0) {
                     sb.append("\n");
                 }
