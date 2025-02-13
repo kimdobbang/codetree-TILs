@@ -13,10 +13,11 @@ public class Main {
 
     private static void solution () throws IOException {
         StringBuilder sb = new StringBuilder();
+        char letter = 'A'; // 기존 연산에서 char 변수를 직접 ++하도록 최적화
         
-        for (int i = 0; i < n * n; i += n) {
+        for (int i = 0; i < n; i ++) {
             for (int j = 0; j < n; j++) {
-                sb.append((char) ('A' + i + j));
+                sb.append(letter++);
             }
             sb.append("\n");
         }
