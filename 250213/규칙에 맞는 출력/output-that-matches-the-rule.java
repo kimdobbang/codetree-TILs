@@ -9,7 +9,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
 
         int n = Integer.parseInt(br.readLine());
-
+        // i 번째 줄의 첫 번째 숫자는 n - i 이고, n - i 부터 시작해여 n 까지의 수가 출력되야 하므로, i 번째 줄의 j 번째 칸에는 n - i + j 를 출력
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i + 1; j++) {
                 sb.append(n - i + j).append(" ");
@@ -17,6 +17,7 @@ public class Main {
             sb.append("\n");
         }
 
+        // i는 n부터 1까지 감소, i <= j일때 n까지 j출력
         // for (int i = n; i > 0; i--) {
         //     for (int j = 1; j <= n; j++) {
         //         if (i <= j) {
