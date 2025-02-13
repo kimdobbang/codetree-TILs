@@ -10,8 +10,9 @@ public class Main {
         int num = 1;
         
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
 
+            // 공백, 숫자 출력하는 반복문을 각각 2개 써서 해결도 가능
+            for (int j = 0; j < n; j++) {
                 // i <= j일때 append후 ++ 하고 10되면 1로 초기화
                 if (i <= j) {
                     if (num == 10) {
