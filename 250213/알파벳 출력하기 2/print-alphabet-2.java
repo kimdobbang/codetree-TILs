@@ -17,11 +17,15 @@ public class Main {
         char letter = 'A';
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+
+                // i > j 영역에 공백넣고 continue처리
                 if (i > j) {
                     sb.append("  ");
                     continue;
                 }
-                if (letter == 'Z' + 1) {
+
+                // i <= j라면(n - i부터) Z보다 작은지 검증하여 append
+                if (letter > 'Z') {
                     letter = 'A';
                 }
                 sb.append(letter++).append(" ");
