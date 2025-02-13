@@ -5,17 +5,16 @@ public class Main {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
+
         int n = Integer.parseInt(br.readLine());
         
-        for (int i = 0; i < n; i++) {
-            // 공백
-            for (int j = 0; j < i; j++) {
+        for (int i = n; i >= 1; i--) {
+            for(int j = n; j >= 1; j--) {
+                if (i >= j) {
+                    sb.append(j).append(" ");
+                    continue;
+                }
                 sb.append("  ");
-            }
-
-            // 숫자
-            for (int j = 0; j < n - i; j++) {
-                sb.append(n - i - j).append(" ");
             }
             sb.append("\n");
         }
