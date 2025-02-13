@@ -14,10 +14,10 @@ public class Main {
 
     public static void solution() throws IOException {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n - i; j++) {
-                sb.append(String.format("%d * %d = %d",i + 1, j + 1,(i + 1) * (j + 1)));
-                if (j < n - i - 1) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i + 1; j++) {
+                sb.append(String.format("%d * %d = %d",i , j ,i * j ));
+                if (j < n - i + 1) {
                     sb.append(" / ");
                 }
             }
@@ -31,3 +31,4 @@ public class Main {
         n = Integer.parseInt(br.readLine());
     }
 }
+
