@@ -11,12 +11,13 @@ public class Main {
         
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+
+                // i <= j일때 append후 ++ 하고 10되면 1로 초기화
                 if (i <= j) {
-                    // 출력 후 ++ 하고 10되면 1로 초기화
-                    sb.append(num++).append(" ");
                     if (num == 10) {
                         num = 1;
                     }
+                    sb.append(num++).append(" ");
                     continue;
                 }
                 sb.append("  ");
