@@ -13,26 +13,21 @@ public class Main {
             int n = Integer.parseInt(br.readLine());
             int cnt = 0;
 
-            while (true) {
-                // 1되면 출력 반복문 종료
-                if (n == 1) {
-                    sb.append(cnt).append("\n");
-                    break;
-                }
-                // n이 짝수
+            // n이 1이 될때 까지 반복
+            while (n != 1) {
                 if (n % 2 == 0) {
                     n /= 2;
                     cnt++;
                     continue;
                 }
-                // n이 홀수
                 if (n % 2 == 1) {
                     n *= 3;
                     n++;
                     cnt++;
                 }
-
             }
+            // while문 종료마다 append
+            sb.append(cnt).append("\n");
         }
         System.out.print(sb);
     }
